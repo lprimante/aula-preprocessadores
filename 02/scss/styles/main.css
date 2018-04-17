@@ -1,0 +1,19 @@
+.row {
+  margin: 50px;
+}
+.row img {
+  max-width: 100%;
+}
+.row form input[type=submit] {
+  background-color: gray;
+}
+.row form input[type=submit]:hover {
+  background-color: lightgray;
+}
+
+tbody tr {
+  font-weight: bold;
+}
+tbody tr:nth-child(even) {
+  background-color: lightgrey;
+}
