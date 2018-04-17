@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#apresentacao, #contato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: space-between;
+    padding: 20px 0;
+}
+
+@media (max-width: 400px) {
+    #apresentacao, #contato {
+        flex-direction: column;
+    }
+}
+
+#apresentacao header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+header > img {
+    width: 20%;
+}
+
+.coluna {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 350px;
+    width: 30%;
+    padding: 10px;
+}
+
+#apresentacao .coluna > img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#apresentacao h1 {
+    display: flex;
+    text-align: left;
+}
+
+#apresentacao p {
+    display: flex;  
+    text-align: justify;
+}
+
+#contato ul li {
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#contato ul {
+    padding: 0;
+}
+
+#contato form {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+textarea {
+    display: flex;
+    width: 99%;
+    margin: 10px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+#contato .grupo-input {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+#contato input {
+    width: 100%;
+    font-size: 18px;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+#contato .coluna:nth-child(1) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+form > input {
+    font-family: 'Open Sans', sans-serif;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    padding: 8px 0;
+    border: none;
+}

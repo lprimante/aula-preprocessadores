@@ -49,7 +49,24 @@
       background-color: skyblue;
     }
 
+    input[type="email"],
+    input[type="text"],
+    select,
+    textarea {
+      border-color: red;
+    }
 
+    h1+p {
+      color: red;
+    }
+
+    h1+p+p {
+      color: yellow;
+    }
+
+    div.columns.four>p{
+      color: tomato;
+    }
 
   </style>
 </head>
@@ -58,6 +75,7 @@
     <div class="row">
       <div class="columns six">
         <h1>Seletores de CSS</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet culpa voluptates soluta libero id similique excepturi totam voluptatibus nobis, laboriosam fugit deserunt perferendis optio mollitia repudiandae autem. Officiis consectetur, vel.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet culpa voluptates soluta libero id similique excepturi totam voluptatibus nobis, laboriosam fugit deserunt perferendis optio mollitia repudiandae autem. Officiis consectetur, vel.</p>
       </div>
       <div class="columns six">
@@ -101,15 +119,25 @@
       </div>
       <div class="columns four">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, <a target="_blank" href="http://www.google.com.br">cum temporibus omnis sit</a> reprehenderit adipisci aliquid voluptatibus eveniet obcaecati voluptate dolorem, libero deleniti quidem, quasi aliquam, aspernatur illo eligendi? Officia.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit totam recusandae, accusamus molestiae accusantium voluptates perspiciatis tempora nobis expedita dolorum voluptate eos cupiditate earum similique minima alias, itaque obcaecati veritatis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laudantium distinctio voluptatem accusantium voluptas, officia voluptatum vitae quas culpa atque, voluptate in sequi aspernatur eum nesciunt animi placeat tempora molestiae.</p>
       </div>
     </div>
     <div class="row">
       <form action="">
           <div class="six columns">
-            <label for="exampleEmailInput">Seu email</label>
-            <input class="u-full-width" placeholder="test@mailbox.com" type="email">
+            <label for="exampleNomeInput">Nome</label>
+            <input class="u-full-width" type="text">
+            <label for="exampleEmailInput">Email</label>
+            <input class="u-full-width" placeholder="teste@email.com" type="email">
           </div>
           <div class="six columns">
+            <label for="exampleRecipientInput">Opções</label>
+            <select class="u-full-width">
+              <option value="Opt 1">Questões</option>
+              <option value="Opt 2">Admiração</option>
+              <option value="Opt 3">Pode me passar seu número?</option>
+            </select>
             <label for="exampleRecipientInput">Opções</label>
             <select class="u-full-width">
               <option value="Opt 1">Questões</option>

@@ -1,52 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>Reprograma</title>
-  <link rel="stylesheet" href="./main.css">
-  <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Open+Sans:300" rel="stylesheet"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Open+Sans:300" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/style.css">    
+	<title>Reprograma</title>
 </head>
 <body>
-  <div class="container">
-    <div id="presentation" class="row">
-      <img src="./images/reprograma-roxo.png" id="header" alt="reprograma" />
-      <div class="columns six" style="margin-left: 0">
-        <h1>Vamos reprogramar o mundo!</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id ultrices felis, et imperdiet libero. Nulla hendrerit turpis a mi fringilla ultrices. Curabitur massa tortor, faucibus efficitur libero vitae, finibus fringilla dui. Duis odio massa, volutpat non egestas eget, consequat ut justo. Cras a purus maximus, pulvinar turpis varius, suscipit tellus. Mauris consectetur augue sit amet lobortis hendrerit.</p>
-      </div>
-      <div class="columns six">
-        <img src="./images/helping-women.gif">
-      </div>
+    <div id="apresentacao" class="linha">
+        <header>
+            <img src="./img/logo-small.png" alt="Logo Reprograma">
+        </header>    
+        <div class="coluna">
+            <h1>Vamos reprogramar o mundo</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti impedit laudantium accusantium eveniet accusamus porro ex, quae, quia fuga officiis ratione ab similique perspiciatis quaerat at laborum magnam inventore nobis?</p>
+        </div>
+        <div class="coluna">
+            <img src="./img/sororidade.gif" alt="Gif de mulheres se ajudando">
+        </div>
     </div>
-    <div id="contact-form" class="row">
-      <div class="columns six">
-        <h1>Entre em contato</h1>
-        <ul>
-          <li><strong>email</strong>contato@reprograma.co</li>
-          <li><strong>slack</strong>reprograma.slack.com</li>
-          <li><strong>telefone</strong>+55 11 727 394 718</li>
-        </ul>
-      </div>
-      <div class="columns six">
-        <form>
-          <div class="input-group">
-            <label>Nome</label>
-            <input name="name" type="text" />
-          </div>
-          <div class="input-group">
-            <label>Email</label>
-            <input name="email" type="email" />
-          </div>
-          <div class="input-group">
-            <label>Assunto</label>
-            <input name="subject" type="text" />
-          </div>
-          <div class="input-group">
-            <textarea name="textarea" rows="50" cols="50">Escreva sua mensagem aqui.</textarea>  
-          </div>
-        </form>
-      </div>
+    <div id="contato" class="linha">
+        <div class="coluna">
+            <h2>Entre em contato</h2>
+            <ul>
+                <li><strong>Email:</strong> contato@reprograma.com.br</li>
+                <li><strong>Slack:</strong> reprograma.slack.com</li>
+                <li><strong>Telefone:</strong> +55 11 727 394 718</li>
+            </ul>
+        </div>
+        <div class="coluna">
+            <form action="/">
+                <div class="grupo-input">
+                    <label for="nome">Nome</label>
+                    <input name="nome" type="text" />
+                </div>
+                <div class="grupo-input">
+                    <label for="email">Email</label>
+                    <input name="email" type="email" />
+                </div>
+                <div class="grupo-input">
+                    <label for="assunto">Assunto</label>
+                    <input name="assunto" type="text" />
+                </div>
+                <div class="grupo-input">
+                    <textarea name="mensagem" rows="5">Digite sua mensagem.</textarea>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
     </div>
-  </div>
 </body>
 </html>
