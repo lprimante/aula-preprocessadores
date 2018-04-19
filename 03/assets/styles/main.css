@@ -1,5 +1,5 @@
 * {
-  font-family: 'roboto', sans-serif;
+  font-family: "roboto", sans-serif;
   font-weight: 300;
   color: white;
   box-sizing: border-box;
@@ -35,7 +35,6 @@ ul {
   bottom: -20px;
   z-index: 4;
 }
-
 .floating-button img {
   margin-top: 3px;
   width: 18px;
@@ -56,7 +55,7 @@ ul {
   width: 90vw;
   left: 5vw;
   z-index: 1;
-  opacity: .2;
+  opacity: 0.2;
 }
 
 #header-shadow-2 {
@@ -64,7 +63,7 @@ ul {
   width: 95vw;
   left: 2.5vw;
   z-index: 2;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 #resume {
@@ -80,12 +79,10 @@ ul {
   box-shadow: 0px 7px 43px -6px rgba(0, 0, 0, 0.75);
   z-index: 3;
 }
-
 #resume .header {
   display: flex;
   justify-content: space-around;
 }
-
 #resume .header ul {
   list-style-type: none;
   display: flex;
@@ -93,31 +90,25 @@ ul {
   width: 100%;
   padding: 30px 20px 15px;
 }
-
 #resume .header ul li .icon {
   width: 20px;
 }
-
 #resume .header ul li h4 {
   text-transform: uppercase;
   letter-spacing: 10px;
   font-size: 0.8em;
 }
-
 #resume .balance {
   text-align: center;
 }
-
 #resume .balance h2 {
   margin: 0;
   font-size: 16px;
   letter-spacing: 2px;
 }
-
 #resume .balance span {
   font-size: 20px;
 }
-
 #resume .balance p {
   margin: 10px 0 25px;
 }
@@ -128,7 +119,6 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
-
 #my-wallet .info p {
   color: lightgray;
   margin: 5px 0;
@@ -136,11 +126,9 @@ ul {
   font-size: 12px;
   letter-spacing: 1px;
 }
-
 #my-wallet .info p img {
   height: 12px;
 }
-
 #my-wallet a {
   text-transform: uppercase;
   text-decoration: none;
@@ -148,4 +136,24 @@ ul {
   letter-spacing: 2px;
   font-size: 12px;
 }
-/*# sourceMappingURL=main.css.map */
+
+#coin-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  margin: 10px 20px;
+  padding: 10px;
+  background: linear-gradient(to right, #525e7f 0%, #333f60 100%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 37px 6px rgba(0, 0, 0, 0.34);
+}
+#coin-list li .coin h4,
+#coin-list li .price h4 {
+  margin-bottom: 2px;
+  margin-top: 0;
+}
+#coin-list li .coin p,
+#coin-list li .price p {
+  opacity: 0.5;
+}

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* Overwrites
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#overview {
+  padding-bottom: 20px;
+}
+
+#overview #header {
+  opacity: .3;
+}
+
+/* Card Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#card {
+  background-image: url("../images/background-gradient-pb.png");
+  background-size: cover;
+  border-radius: 10px;
+  margin: 80px 15px 15px;
+  padding: 5px 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+#card .wallet {
+  width: 70px;
+  margin: 30px 20px 20px;
+  opacity: .5;
+}
+
+#card .balance p {
+  opacity: .5;
+  font-size: 12px;
+}
+
+#card .balance p .inline-icon {
+  height: 12px;
+}
+
+#card .balance h1 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+#card .balance h1 span {
+  font-size: 24px;
+}
+
+#card .floating-button {
+  right: calc(50% - 20px);
+  background: linear-gradient(to right, #9785eb 0%, #f97ab3 100%);
+}
+
+/* Graph Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#graph {
+  margin: 40px 0 20px;
+}
+
+#graph img {
+  width: 100vw;
+}
+
+#graph h4 {
+  margin: 0 20px;
+  padding-bottom: 7px;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+/* Percentages Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#percentages {
+  padding: 0 20px;
+}
+
+#percentages .tabs ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+#percentages .tabs ul li {
+  padding-bottom: 10px;
+  opacity: .5;
+}
+
+#percentages .tabs ul li.active {
+  opacity: 1;
+}
+
+#percentages .numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#percentages .numbers div {
+  width: 50%;
+  margin: 20px 0;
+}
+
+#percentages .numbers div:nth-child(odd) {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#percentages .numbers div:nth-child(even) {
+  padding-left: 20px;
+}
+
+#percentages .numbers div h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#percentages .numbers div h2 span {
+  font-size: 30px;
+}
+
+#percentages .numbers div p {
+  opacity: .5;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=cycle.css.map */

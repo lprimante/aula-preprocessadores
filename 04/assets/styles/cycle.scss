@@ -1,0 +1,105 @@
+#card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85vw;
+    border-radius: 10px;
+    background-image: url(../images/background-gradient-pb.png);
+    background-size: cover;
+    box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.75);
+    margin: 80px 20px 0px;
+    padding: 35px 5px;
+    position: relative;
+    
+    .wallet{
+        width: 50px;
+    }
+
+    .balance {
+
+        h1{
+            margin: 0;
+            font-size: 16px;
+            margin: 5px 0;
+            letter-spacing: 2px;
+        }
+
+        p {
+            color: lightgray;
+        }
+
+        span {
+            font-size: 22px;
+          }
+    }
+
+    .floating-button {
+        right: calc(50% - 20px);
+        background: linear-gradient(to right, rgba(151,133,236,1) 0%,rgba(251,122,178,1) 100%); 
+    }
+}
+
+#graph {
+
+    .active {
+        width: 50px;
+        margin: $margem-cycle;
+    }
+
+    img {
+        width: 100%;
+    }
+
+}
+
+#percentages {
+
+    .tabs {
+
+        ul {
+            @extend %flexbox;
+            margin: $margem-cycle;
+
+            li {
+                opacity: 0.5;
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.numbers {
+    @extend %flexbox;
+    
+
+    div{
+        width: 50%;
+        padding-bottom: 20px;
+        
+        &:first-child {
+            border-right: 1px solid rgba(255, 255, 255, .1);
+        }
+
+        h2 {
+            margin: 5px 0;
+            font-size: 24px;
+            text-align: center;
+
+            span {
+                opacity: .5;
+                font-size: 18px;
+            }
+
+        }
+
+        p {
+            margin: 0;
+            opacity: .5;
+            margin-left: 70px;
+            letter-spacing: 2px;
+        }
+    }
+}
