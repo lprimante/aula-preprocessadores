@@ -1,0 +1,114 @@
+* {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+#contato .coluna form .grupo-input, #contato, #apresentacao {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#contato .coluna, #apresentacao .coluna {
+  width: 30%;
+  margin: 40px 18px;
+}
+
+#apresentacao {
+  flex-wrap: wrap;
+}
+#apresentacao header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#apresentacao header img {
+  padding: 20px 0;
+  width: 10%;
+  min-width: 150px;
+}
+#apresentacao .coluna h1 {
+  font-family: "Black Han Sans", Arial, Helvetica, sans-serif;
+}
+#apresentacao .coluna p {
+  text-align: justify;
+}
+
+#contato .coluna h2 {
+  margin: 0;
+  font-family: "Black Han Sans", Arial, Helvetica, sans-serif;
+}
+#contato .coluna form {
+  width: 100%;
+}
+#contato .coluna form .grupo-input {
+  flex-direction: column;
+}
+#contato .coluna form .grupo-input input {
+  width: 100%;
+}
+#contato .coluna form .grupo-input textarea {
+  width: 100%;
+  margin: 20px 0;
+}
+#contato .coluna form input[type=submit] {
+  width: 100%;
+  background-color: #1f1f1f;
+  color: #ffff;
+  border: none;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 2s;
+}
+#contato .coluna form input[type=submit]:hover {
+  background-color: #7f3f94;
+  transition: 2s;
+}
+#contato .coluna form input[type=submit]:visited {
+  background-color: #ff6978;
+}
+
+@media (min-width: 360px) {
+  #apresentacao {
+    align-content: center;
+  }
+  #apresentacao header img {
+    padding-bottom: 0;
+  }
+  #apresentacao .coluna {
+    width: 80%;
+    margin: 20px 0;
+  }
+  #apresentacao .coluna h1 {
+    font-size: 24px;
+  }
+
+  #contato {
+    flex-direction: column;
+    align-items: center;
+  }
+  #contato .coluna {
+    width: 80%;
+    margin: 20px 0;
+  }
+  #contato .coluna h2 {
+    text-align: center;
+  }
+  #contato .coluna ul {
+    text-align: center;
+  }
+}

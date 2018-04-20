@@ -1,0 +1,167 @@
+// Geral Styles
+
+* {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+// Variables and extends styles
+
+$font-black: 'Black Han Sans', Arial, Helvetica, sans-serif;
+
+$color-white: #ffff; 
+$color-gray: #1f1f1f;
+$color-purple: #7f3f94;
+$color-pink: #ff6978;
+
+%flexbox-center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+%column-size {
+    width: 30%;
+    margin: 40px 18px;
+}
+
+// Section Apresentação
+
+#apresentacao {
+    @extend %flexbox-center;
+    flex-wrap: wrap;
+
+    header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        img {
+            padding: 20px 0;
+            width: 10%;
+            min-width: 150px;
+        }
+    }
+
+    .coluna {
+        @extend %column-size;
+
+        h1 {
+            font-family: $font-black;
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+}
+
+// Section Contato
+
+#contato {
+    @extend %flexbox-center;
+
+    .coluna {
+        @extend %column-size;
+
+        h2 {
+            margin: 0;
+            font-family: $font-black;
+        }
+
+        form {
+            width: 100%;
+
+            .grupo-input{
+                @extend %flexbox-center;
+                flex-direction: column;
+
+                input {
+                    width: 100%;
+
+                }
+
+                textarea {
+                    width: 100%;
+                    margin: 20px 0;
+                }
+            }
+
+            input[type="submit"] {
+                width: 100%;
+                background-color: $color-gray;
+                color: $color-white;
+                border: none;
+                padding: 5px;
+                font-weight: bold;
+                font-size: 16px;  
+                transition: 2s;
+
+                &:hover {
+                    background-color: $color-purple;
+                    transition: 2s;
+                }
+
+                &:visited {
+                    background-color: $color-pink;
+                }
+            }
+        }
+    }
+}
+
+// Mobile Version
+
+@media (min-width: 360px) {
+    #apresentacao {
+        align-content: center;
+
+        header {
+
+            img {
+                padding-bottom: 0;
+            }
+        }
+
+        .coluna {
+            width: 80%;
+            margin: 20px 0;
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    #contato {
+        flex-direction: column;
+        align-items: center;
+
+        .coluna {
+            width: 80%;
+            margin: 20px 0;
+
+            h2 {
+                text-align: center;
+            }
+
+            ul {
+                text-align: center;
+
+            }
+        }
+    }    
+}
