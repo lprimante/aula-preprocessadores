@@ -24,8 +24,11 @@ $font-black: 'Black Han Sans', Arial, Helvetica, sans-serif;
 
 $color-white: #ffff; 
 $color-gray: #1f1f1f;
+$color-lightgray: #d4d3d3;
 $color-purple: #7f3f94;
 $color-pink: #ff6978;
+
+$border-radius: 5px;
 
 %flexbox-center {
     display: flex;
@@ -43,6 +46,7 @@ $color-pink: #ff6978;
 #apresentacao {
     @extend %flexbox-center;
     flex-wrap: wrap;
+    height: 100vh;
 
     header {
         display: flex;
@@ -65,6 +69,7 @@ $color-pink: #ff6978;
 
         p {
             text-align: justify;
+            color: $color-gray;
         }
     }
 }
@@ -73,13 +78,21 @@ $color-pink: #ff6978;
 
 #contato {
     @extend %flexbox-center;
+    margin: 35px 0;
 
     .coluna {
         @extend %column-size;
 
         h2 {
-            margin: 0;
+            margin-top: 0;
             font-family: $font-black;
+        }
+
+        ul {
+
+            li {
+                margin: 8px 0;
+            }
         }
 
         form {
@@ -88,20 +101,53 @@ $color-pink: #ff6978;
             .grupo-input{
                 @extend %flexbox-center;
                 flex-direction: column;
+                margin: 8px 0;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                label {
+                    margin: 0 0 5px 1px;
+                }
 
                 input {
                     width: 100%;
+                    border: 1px solid $color-lightgray;
+                    border-radius: $border-radius;
+                    padding: 8px;
+                    font-size: 14px;
+                    color: $color-lightgray;
+                    transition: 1s;
 
+                    &:focus {
+                        color: $color-gray;
+                        border-color: $color-gray;
+                        transition: 1s;
+                    }
                 }
 
                 textarea {
                     width: 100%;
                     margin: 20px 0;
+                    border: 1px solid $color-lightgray;
+                    border-radius: $border-radius;
+                    padding: 8px;
+                    color: $color-lightgray;
+                    font-size: 14px;
+                    transition: 1s;
+
+                    &:focus {
+                        color: $color-gray;
+                        border-color: $color-gray;
+                        transition: 1s;
+                    }
                 }
             }
 
             input[type="submit"] {
                 width: 100%;
+                border-radius: $border-radius;
                 background-color: $color-gray;
                 color: $color-white;
                 border: none;
@@ -125,9 +171,10 @@ $color-pink: #ff6978;
 
 // Mobile Version
 
-@media (min-width: 360px) {
+@media (max-width: 736px) {
     #apresentacao {
         align-content: center;
+        height: 100%;
 
         header {
 

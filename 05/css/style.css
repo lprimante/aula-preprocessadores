@@ -29,6 +29,7 @@ img {
 
 #apresentacao {
   flex-wrap: wrap;
+  height: 100vh;
 }
 #apresentacao header {
   display: flex;
@@ -45,27 +46,64 @@ img {
 }
 #apresentacao .coluna p {
   text-align: justify;
+  color: #1f1f1f;
 }
 
+#contato {
+  margin: 35px 0;
+}
 #contato .coluna h2 {
-  margin: 0;
+  margin-top: 0;
   font-family: "Black Han Sans", Arial, Helvetica, sans-serif;
+}
+#contato .coluna ul li {
+  margin: 8px 0;
 }
 #contato .coluna form {
   width: 100%;
 }
 #contato .coluna form .grupo-input {
   flex-direction: column;
+  margin: 8px 0;
+}
+#contato .coluna form .grupo-input:first-child {
+  margin-top: 0;
+}
+#contato .coluna form .grupo-input label {
+  margin: 0 0 5px 1px;
 }
 #contato .coluna form .grupo-input input {
   width: 100%;
+  border: 1px solid #d4d3d3;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+  color: #d4d3d3;
+  transition: 1s;
+}
+#contato .coluna form .grupo-input input:focus {
+  color: #1f1f1f;
+  border-color: #1f1f1f;
+  transition: 1s;
 }
 #contato .coluna form .grupo-input textarea {
   width: 100%;
   margin: 20px 0;
+  border: 1px solid #d4d3d3;
+  border-radius: 5px;
+  padding: 8px;
+  color: #d4d3d3;
+  font-size: 14px;
+  transition: 1s;
+}
+#contato .coluna form .grupo-input textarea:focus {
+  color: #1f1f1f;
+  border-color: #1f1f1f;
+  transition: 1s;
 }
 #contato .coluna form input[type=submit] {
   width: 100%;
+  border-radius: 5px;
   background-color: #1f1f1f;
   color: #ffff;
   border: none;
@@ -82,9 +120,10 @@ img {
   background-color: #ff6978;
 }
 
-@media (min-width: 360px) {
+@media (max-width: 736px) {
   #apresentacao {
     align-content: center;
+    height: 100%;
   }
   #apresentacao header img {
     padding-bottom: 0;
