@@ -1,6 +1,6 @@
 # Plano de Aulas
 
-> Plano de aulas para a semana do dia 16/04/2017 - 20/04/2017, sobre pré-processadores de CSS.
+> Plano de aulas do Reprograma para a semana do dia 16/04/2017 - 20/04/2017, sobre pré-processadores de CSS.
 
 ---
 
